@@ -1,3 +1,86 @@
-.rw-launcher:focus {
-    outline-style: auto !important;
+:root {
+    --body-background: #06143c;
+    --secondary: #000;
+    --widget-height: 600px;
+    --widget-width: 370px;
+    --user-message-background: #06153ccc
+}
+
+body {
+    height: 100vh;
+    background: var(--body-background) !important;
+}
+
+.rw-client {
+    background: var(--user-message-background) !important;
+}
+
+.rw-response {
+    background: #ffffff4d !important;
+}
+
+.rw-conversation-container {
+    border-radius: .5rem !important;
+    box-shadow: none !important;
+}
+
+.rw-sender {
+    background-color: transparent !important;
+}
+
+.rw-sender textarea {
+    background-color: transparent !important;
+}
+
+.rw-messages-container {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    background-color: transparent !important;
+}
+
+.rw-messages-container::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+.rw-new-message {
+    /* textarea shows unremovable white background where the resize icon is*/
+    overflow: hidden;
+}
+
+.rw-send {
+    background: transparent !important;
+}
+
+.rw-send-icon-ready {
+    fill: var(--user-message-background) !important;
+}
+
+#widget-container {
+    width: var(--widget-width);
+    height: var(--widget-height);
+}
+
+#angled-one {
+    /*background: #e9eaec;*/
+    background-image: linear-gradient(to bottom left, #1bffd2, #912dff, rgba(74,222,128,0));
+    transform: translate(-50%, -50%) rotate(-2deg) skewX(-8deg);
+}
+
+#angled-two {
+    background-image: linear-gradient(to bottom right, #100092,#2ab8d8, rgba(74,222,128,0));
+    transform: translate(-50%, -50%) rotate(2deg) skewX(8deg);
+}
+
+.nice-background {
+    width: calc(100px + var(--widget-width));
+    height: calc(100px + var(--widget-height));
+    border-radius: 1.5rem;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
